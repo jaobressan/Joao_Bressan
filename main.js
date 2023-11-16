@@ -8,13 +8,13 @@ for (let i = 1; i <= 5; i++) {
     lista.appendChild(listItem); // Adiciona o item à lista
 }
 
-// Adiciona um ouvinte de eventos ao botão para mudar a cor do título
-document.getElementById("botaoMudarCor").addEventListener("click", function() {
-    var titulo = document.getElementById("titulo"); // Obtém o elemento do título
-    // Verifica se o título já tem a classe 'corVermelha'
-    if(titulo.classList.contains("corVermelha")) {
-        titulo.classList.remove("corVermelha"); // Remove a classe se estiver presente
+// Adiciona um ouvinte de eventos ao novo botão para mudar a cor de fundo
+document.getElementById("botaoMudarFundo").addEventListener("click", function() {
+    var container = document.querySelector(".container"); // Obtém o elemento container
+    // Alterna a cor de fundo para vermelho
+    if(container.style.backgroundColor === "red") {
+        container.style.backgroundColor = ""; // Reseta a cor de fundo se já for vermelha
     } else {
-        titulo.classList.add("corVermelha"); // Adiciona a classe se não estiver presente
+        container.style.backgroundColor = "red"; // Muda a cor de fundo para vermelho
     }
 });
