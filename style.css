@@ -1,0 +1,48 @@
+/* Estilos gerais */
+body {
+    background-color: #706c6c; /* Define a cor de fundo de toda a página */
+    text-align: center; /* Centraliza todo o conteúdo textual dentro do body */
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    /* outros estilos podem ser adicionados aqui se necessário */
+}
+
+.botao-container {
+    margin: 20px 0; /* Adiciona espaço acima e abaixo do contêiner de botões */
+}
+
+/* Estilização da lista */
+#listaDinamica {
+    list-style-type: none; /* Remove os marcadores padrão (bolinhas) da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: none; /* Oculta a lista inicialmente */
+    margin-top: 20px; /* Adiciona espaço acima da lista */
+}
+
+/* Estilização dos itens da lista */
+#listaDinamica li {
+    display: inline-block; /* Os itens da lista são exibidos lado a lado */
+    margin: 0 10px; /* Adiciona espaçamento entre os itens da lista */
+    /* outros estilos podem ser adicionados aqui se necessário */
+}
+
+/* Definição da animação rainbow (arco-íris) */
+@keyframes rainbow {
+    0% { color: red; }
+    17% { color: orange; }
+    34% { color: yellow; }
+    51% { color: green; }
+    68% { color: blue; }
+    85% { color: indigo; }
+    100% { color: violet; }
+}
+
+/* Aplica a animação rainbow ao texto com a classe .rainbow-text */
+.rainbow-text {
+    animation: rainbow 2s linear infinite; /* Animação contínua de 2 segundos, repetindo infinitamente */
+}
+
+
+

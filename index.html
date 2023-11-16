@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Trabalho Individual JS</title> 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <div class="container"> <!-- Divisão contêiner para agrupar elementos centrais da página -->
+        <h1 id="titulo">Bem vindo à Minha Página</h1> <!-- Título principal da página -->
+        <div class="botao-container"> <!-- Contêiner para os botões -->
+            <button id="botaoMudarCor">Mudar Cor</button> <!-- Botão para mudar a cor do título -->
+            <button onclick="exibirMensagem()">Mostrar Mensagem</button> <!-- Botão para mostrar uma mensagem de alerta -->
+            <button id="botaoMostrarLista">Mostrar Lista</button> <!-- Botão para mostrar/ocultar a lista -->
+        </div>
+        <ul id="listaDinamica"></ul> <!-- Lista não ordenada para exibição dinâmica dos itens -->
+    </div>
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript externo script.js -->
+    <script src="main.js"></script> <!-- Vincula o arquivo JavaScript externo main.js -->
+    <script src="utils.js"></script> <!-- Vincula o arquivo JavaScript externo utils.js -->
+</body>
+</html>
